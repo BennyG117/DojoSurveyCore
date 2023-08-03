@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "n/zECIFzxLgIuzeWeTslqivyjIjBuh2VddN5H+zOJ1o=",
+  "Source": "DojoSurveyCore",
+  "BasePath": "_content/DojoSurveyCore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DojoSurveyCore/wwwroot",
+      "Source": "DojoSurveyCore",
+      "ContentRoot": "/Users/bengomez/Desktop/NewCode/C_SHARP/C_sharp_HW/C_sharp_Core_HW/DojoSurveyCore/wwwroot/",
+      "BasePath": "_content/DojoSurveyCore",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

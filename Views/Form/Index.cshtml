@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>@ViewBag.InputForm</h1>
+    <div>
+        <form action="process" method="post">
+            @* YOUR NAME ------- *@
+            <div>
+                <label for="YourName">Your Name:</label>
+                <input type="text" name="YourName">
+            </div>
+            @* DOJO LOCATION ------- *@
+            <div>
+                <label for="DojoLocation">Dojo Location:</label>
+                <select name="DojoLocation" id="dojoSelect">
+                    <option value="Seattle">Seattle</option>
+                    <option value="Denver">Denver</option>
+                    <option value="LA">LA</option>
+                    <option value="Phoenix">Phoenix</option>
+                </select>
+            </div>
+            @* FAVORITE LANGUAGE ------- *@
+            <div>
+                <label for="FavoriteLanguage">Favorite Language:</label>
+                <select name="FavoriteLanguage" id="languageSelect">
+                    <option value="JS">JS</option>
+                    <option value="C#">C#</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+            @* COMMENT (OPTIONAL) -------- *@
+            <div>
+                <label for="CommentOptional">Comment (optional):</label>
+                <textarea name="CommentOptional" id="commentBox" cols="30" rows="10">Write comments here...</textarea>
+            </div>
+        <button type="submit">Submit</button>  
+
+        </form>
+    </div>    
+</body>
+</html>
