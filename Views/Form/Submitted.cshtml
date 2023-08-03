@@ -11,10 +11,29 @@
     <br/>
     <div>
 
-        <p>Name: @ViewBag.YourName</p>
+        <div>@ViewBag.YourName</div>
+        <div>@ViewBag.DojoLocation</div>
+        <div>@ViewBag.FavoriteLanguage</div>
+        <div>@ViewBag.CommentOptional</div>
+
+
+
+@* <<<OR>>> *@
+
+        @* @foreach(FormData s in Form)
+        {
+            <h2>@s.YourName</h2>
+            <p>@s.DojoLocation</p>
+            <p>@s.FavoriteLanguage</p>
+            <p>@s.CommentOptional</p>
+        } *@
+
+@* <<<OR>>> *@
+ 
+        @* <p>Name: @ViewBag.YourName</p>
         <p>Dojo Location: @ViewBag.DojoLocation</p>
         <p>Favorite Language: @ViewBag.FavoriteLanguage</p>
-        <p>Comment (optional): @ViewBag.CommentOptional</p>
+        <p>Comment (optional): @ViewBag.CommentOptional</p> *@
     </div>
     <br/>
     <button><a href="/">Go back</a></button>

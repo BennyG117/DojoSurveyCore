@@ -37,8 +37,20 @@ public class FormController : Controller   // Remember inheritance?
 
 
     [HttpPost("process")]    
-    public IActionResult Process(FormData formData)
+    public IActionResult Process(string YourName, string DojoLocation, string FavoriteLanguage, string CommentOptional)
     {
+
+        Console.WriteLine($"Name: {YourName}");
+        Console.WriteLine($"Dojo Location: {DojoLocation}");
+        Console.WriteLine($"Favorite Language: {FavoriteLanguage}");
+        Console.WriteLine($"Comments Here: {CommentOptional}");
+
+
+        ViewBag.YourName = YourName;
+        ViewBag.DojoLocation = DojoLocation;
+        ViewBag.FavoriteLanguage = FavoriteLanguage;
+        ViewBag.CommentOptional = CommentOptional;
+
         // Console.WriteLine(formData.YourName);
         // ViewBag.YourName = formData.YourName.ToString();
         // ViewBag.DojoLocation = "Somewhere";
